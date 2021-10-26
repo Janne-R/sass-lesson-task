@@ -1,0 +1,26 @@
+nav {
+  background-color: white;
+
+  .logo {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: getColour(accent);
+  }
+
+  a.active {
+    text-decoration: underline getColour(light-primary) 3px solid;
+  }
+
+  li {
+    margin-left: 1em;
+  }
+}

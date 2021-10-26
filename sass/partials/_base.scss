@@ -1,0 +1,23 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: getColour(grey);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+}

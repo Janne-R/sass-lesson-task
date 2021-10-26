@@ -1,0 +1,40 @@
+footer {
+  background-color: getColour(light-primary);
+  color: white;
+  padding: 1.5rem 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+    }
+  }
+
+  .terms {
+    margin: 1.5rem 0;
+    text-decoration: none;
+    color: white;
+  }
+
+  input {
+    border: none;
+  }
+
+  button {
+    border: none;
+    background-color: getColour(dark-primary);
+    color: white;
+  }
+
+  ::placeholder {
+    color: black;
+  }
+}
