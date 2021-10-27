@@ -1,0 +1,42 @@
+.circle-container {
+  margin-top: 21.44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.mini {
+    margin: 20px auto;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    @include button-border(100%);
+    border: none;
+  }
+
+  &.small {
+    width: 100px;
+    height: 100px;
+    @include button-border(100%);
+    border-color: getColour(secondery);
+  }
+
+  &.medium {
+    width: 150px;
+    height: 150px;
+    @include button-border(100%);
+    border-color: getColour(light-primary);
+  }
+
+  &.large {
+    width: 200px;
+    height: 200px;
+    @include button-border(100%);
+  }
+}

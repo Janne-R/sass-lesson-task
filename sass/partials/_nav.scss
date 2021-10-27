@@ -1,6 +1,10 @@
 nav {
   background-color: white;
 
+  .container {
+    @extend .container-flex;
+  }
+
   .logo {
     text-transform: uppercase;
     font-weight: bold;

@@ -11,13 +11,31 @@ body {
   background-color: #f2f2f2;
 }
 
+p {
+  font-size: 0.9em;
+  text-align: left;
+
+  &.highlight {
+    color: getColour(light-primary);
+  }
+}
+
 .wrapper {
   flex: 1 0 auto;
 }
 
 .container {
-  display: flex;
-  align-items: center;
   max-width: 90%;
   margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-tablet {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
